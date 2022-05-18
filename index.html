@@ -8,80 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            color: white;
-            background: black;
-            overflow-x: hidden;
-        }
-        section {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 400px;
-            padding: 100px 20vw;
-        }
-        .blue {
-            background: blue;
-        }
-        .red {
-            background: red;
-        }
-        .pink {
-            background: pink;
-            color: black;
-        }
-        .green {
-            background: green;
-        }
-        .curve {
-            position: absolute;
-            height: 225px;
-            width: 100%;
-            bottom: 0;
-        }
-        .curve::before {
-            content: '';
-            display: block;
-            position: absolute;
-            border-radius: 100% 50%;
-            width: 55%;
-            height: 100%;
-            background-color: black;
-            transform: translate(85%, 60%);
-        }
-
-        .curve::after {
-            content: '';
-            display: block;
-            position: absolute;
-            border-radius: 100% 50%;
-            width: 55%;
-            height: 100%;
-            background-color: blue;
-            transform: translate(-4%, 40%);
-            z-index: -1;
-        }
-
-        .bubble::after {
-            content: '';
-            border-top-left-radius: 50% 100%;
-            border-top-right-radius: 50% 100%;
-            position: absolute;
-            bottom: 0;
-            height: 85%;
-            width: 100%;
-            background-color: green;
-            z-index: -1;
-        }
-
-    </style>
-
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section class="blue">
         <h1>Nice curves</h1>
@@ -99,18 +28,17 @@
         <p>Minus enim quae perspiciatis eaque! Necessitatibus fugit eveniet cumque voluptates autem provident! Cum temporibus recusandae dolor ipsa eligendi, dolorum tempore expedita. Quam iste labore sunt consequuntur optio omnis in ipsam.</p>
     </section>
 
-    <section>
+    <section class="blue">
         <h1>Nice curves</h1>
         <p>Quas, eligendi? Impedit nemo aliquid repudiandae soluta nisi facilis, repellat perspiciatis velit nostrum alias quod in! Omnis, modi. Libero maiores eveniet eaque natus soluta nemo sapiente atque suscipit! Quisquam, vero.</p>
-        <div class="dark"></div>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </section>
 
-    <section class="red">
-        <h1>Nice curves</h1>
-        <p>Eos expedita quam voluptate reprehenderit. Odit aspernatur officiis saepe, error omnis, dolores officia esse qui doloremque quae nemo soluta dicta ratione in rem repellendus doloribus minima autem corporis ea amet.</p>
-    </section>
-
-    <section>
+    <section class="blue">
         <h1>Nice curves</h1>
         <p>Quas id officiis dignissimos? Libero, accusamus eum velit accusantium odio, iure explicabo aut, magnam id soluta quibusdam veniam sequi minima reiciendis repellat ab. Amet, quod deserunt. Aperiam unde temporibus ratione!</p>
     </section>
